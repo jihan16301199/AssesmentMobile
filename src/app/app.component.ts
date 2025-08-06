@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DesktopViewComponent } from "./features/desktop-view/desktop-view.component";
+import { MobileViewComponent } from './features/mobile-view/mobile-view.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DesktopViewComponent],
+  imports: [RouterOutlet, MobileViewComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
