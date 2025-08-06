@@ -1,0 +1,16 @@
+<div class="row timeframe">
+    <div class="timeframe-background"></div>
+    <div class="left-section">
+        <img class="arrow arrow-up" src="../../../../assets/icons/arrow_up.svg" alt="Up Icon">
+    </div>
+    <div class="center-section">
+        <div class="progress-center" [ngStyle]="{ width: progress + '%' }">
+            <div class="stadium-background"></div>
+            <img class="stadium" src="../../../../assets/icons/stadium.svg" alt="Stadium">
+            <div class="tool-tip">Game starts at <span>{{ startingTime | date:'shortTime' }}</span></div>
+        </div>
+    </div>
+    <div class="right-section">
+        <img class="arrow arrow-down" src="../../../../assets/icons/arrow_down.svg" alt="Down Icon">
+    </div>
+</div>

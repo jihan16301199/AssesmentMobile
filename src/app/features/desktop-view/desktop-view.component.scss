@@ -1,0 +1,153 @@
+.position-relative {
+    position: relative;
+}
+
+.header {
+    background-color: #ffffff80;
+    padding: 24px;
+    border-radius: 24px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.1px;
+        font-weight: 500;
+        margin-top: 12px;
+
+        i {
+            font-size: 44px;
+        }
+
+        span {
+            margin-left: 16px;
+        }
+    }
+}
+
+.context {
+    margin-top: 14px;
+    border-radius: 24px;
+
+    .interaction {
+        height: 240px;
+        padding: 12px 24px;
+        background-color: #ffffff80;
+        border-color: #ffffffcc;
+        border-width: 3px;
+        border-bottom: 0px;
+        border-style: solid;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        // bor
+
+        .time-frame {
+            padding-top: 44px;
+            padding-bottom: 12px;
+
+            span {
+                padding-inline: 12px;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.2px;
+                font-weight: 500;
+            }
+
+            // .start {
+            //     position: absolute;
+            //     left: 0px;
+            //     bottom: 0px;
+            // }
+
+            // .end {
+            //     position: absolute;
+            //     right: 0px;
+            //     bottom: 0px;
+            // }
+        }
+    }
+
+    .confirmation {
+        padding: 24px;
+        margin-top: -44px;
+        background-color: #ffffff;
+        border-color: #ffffffcc;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 24px;
+
+        .slider-area {
+            text-align: center;
+
+            span {
+                display: block;
+            }
+
+            .prompt {
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.1px;
+                font-weight: 500;
+            }
+
+            h1 {
+                font-size: 96px;
+                line-height: 56px;
+                letter-spacing: -0.1px;
+                margin-top: 40px;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: -0.1px;
+                margin-top: 14px;
+                margin-bottom: 0;
+            }
+
+            .slider-prompt {
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0px;
+                margin-top: 40px;
+                margin-bottom: 16px;
+                font-weight: 500;
+                color: #14141499;
+            }
+        }
+
+        .action-area {
+            text-align: center;
+
+            i {
+                font-size: 18px;
+                color: var(--primary);
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.2px;
+                opacity: 54%;
+                display: block;
+            }
+
+            button {
+                font-size: 20px;
+                font-weight: 500;
+                height: 72px;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .view-port {
+        padding-top: 40px;
+        padding-left: 94px;
+        padding-right: 94px;
+    }
+}

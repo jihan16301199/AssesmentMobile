@@ -1,0 +1,26 @@
+<div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            <div *ngFor="let block of blocks; let i = index" class="step-progress" [style.width.%]="progressPercentage"
+                [class.active]="i < duration" [class.current]="i === duration - 1"></div>
+        </div>
+        <div class="slider">
+            <div class="slider-input">
+                <input type="range" min="{{min}}" max="{{max}}" step="{{step}}" [value]="duration"
+                    (input)="onSliderChange($event)" class="custom-slider" />
+                <div class="slider-steps">
+                    <div *ngFor="let block of blocks; let i = index" class="step" [class.active]="i < duration"
+                        [class.current]="i === duration - 1">
+                        <div class="tooltip-container">
+                            <img class="polygon" src="../../../../assets/icons/polygon.svg" alt="">
+                            <div class="title">
+                                <img src="../../../../assets/icons/star_filled.svg" alt="Star">
+                                <span>Recommended</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

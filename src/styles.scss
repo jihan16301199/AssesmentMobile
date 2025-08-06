@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+:root {
+    // --primary: #b00003;
+    --primary: #2169db;
+    --primary-outline: #7AA5E9;
+    --primary-active: #7aa5e965;
+    --secondary: #5a6268;
+    --border: #e0e0e0;
+    --color: #1a1b1f;
+    --color-lite: #1a1b1f99;
+    --color-offset: #ffffff;
+    --menu-background: #eeeeee85;
+    --menu-hover: #b1b1b160;
+    --box-shadow: #63636333;
+    --transparent: #cccccc4d;
+    --primary-action: #7AA5E9;
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro';
+  src: url('/assets/fonts/tt_hoves_pro/TT Hoves Pro Trial Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro';
+  src: url('/assets/fonts/tt_hoves_pro/TT Hoves Pro Trial Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro';
+  src: url('/assets/fonts/tt_hoves_pro/TT Hoves Pro Trial Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro';
+  src: url('/assets/fonts/tt_hoves_pro/TT Hoves Pro Trial DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro';
+  src: url('/assets/fonts/tt_hoves_pro/TT Hoves Pro Trial Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'TT Hoves Pro', sans-serif;
+    background-color: #f0f6ff;
+}
+
+.row,
+.container,
+.container-fluid {
+    --bs-gutter-x: 0 !important;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary-outline);
+    --bs-btn-hover-color: var(--primary);
+    --bs-btn-hover-bg: var(--primary-outline);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: var(--primary);
+    --bs-btn-active-bg: var(--primary-active);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--primary);
+    --bs-btn-disabled-border-color: var(--primary);
+}
