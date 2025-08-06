@@ -22,45 +22,52 @@
                     <h4>hour</h4>
                 </div>
             </div>
+            <div class="row interaction">
+                <div class="col-12">
+                    <div class="row time-bar">
+                        <div class="col-12">
+                            <app-timeframe [progress]="progressPercent"
+                                [startingTime]="gameStartingTime"></app-timeframe>
+                        </div>
+                    </div>
+                    <div class="row time-frame">
+                        <div class="col-6 d-flex justify-content-start">
+                            <span class="start">{{ startingTime | date:'shortTime' }}</span>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <span class="end">{{ endingingTime | date:'shortTime' }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="row context">
                 <div class="col-12">
-                    <div class="row interaction">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12">
-                                    <app-timeframe [progress]="progressPercent"
-                                        [startingTime]="gameStartingTime"></app-timeframe>
-                                </div>
-                            </div>
-                            <div class="row time-frame">
-                                <div class="col-6 d-flex justify-content-start">
-                                    <span class="start">{{ startingTime | date:'shortTime' }}</span>
-                                </div>
-                                <div class="col-6 d-flex justify-content-end">
-                                    <span class="end">{{ endingingTime | date:'shortTime' }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row confirmation">
                         <div class="col-12">
                             <div class="row slider-area">
                                 <div class="col-12">
-
                                     <div class="row">
                                         <div class="col-12">
-                                            <span class="slider-prompt">Slide to set total ride duration</span>
                                             <app-slider-mobile [min]="1" [max]="range" [step]="1"
                                                 (eventValue)="update($event)"></app-slider-mobile>
+                                            <span class="slider-prompt">Slide to set total ride duration</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12">
+                    <div class="row confirmation">
+                        <div class="col-12">
                             <div class="row action-area">
                                 <div class="col-12">
                                     <img src="./assets/icons/star.svg" alt="Star">
-                                    <span class="my-2">Recommended for your best game day experience</span>
+                                    <span>Recommended for your best game day experience</span>
                                     <button class="btn btn-primary btn-block" type="submit">Continue</button>
                                 </div>
                             </div>
@@ -68,6 +75,7 @@
                     </div>
                 </div>
             </div>
+
 
         </div>
     </div>

@@ -39,6 +39,6 @@ export class MobileViewComponent implements OnInit {
   }
 
   updateProgress(event: number): void {
-    this.progressPercent = (((50 / this.range) * (this.range + 1 - event)) + 50);
+    this.progressPercent = (((70 / this.range) * (this.range + 1 - event)) + 30);
   }
 }

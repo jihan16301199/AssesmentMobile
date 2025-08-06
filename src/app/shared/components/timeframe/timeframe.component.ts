@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './timeframe.component.scss'
 })
 export class TimeframeComponent {
-  @Input() progress: Number;
+  @Input() progress: number;
   @Input() startingTime: Date = new Date();
 
 }
